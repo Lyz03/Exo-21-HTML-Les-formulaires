@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>exo 21</title>
+</head>
+<body>
+
+    <h1>Formulaire</h1>
+
+    <form action="mailto:lizoe@netcourrier.com" method="post">
+        <fieldset>
+            <div>
+                <label for="Name">Votre Nom Prénom :</label>
+                <input type="text" id="Name" name="user_name" placeholder="Nom Prénom" required>
+            </div>
+            <div>
+                <label for="passWord">Votre mot de passe :</label>
+                <input type="password" id="passWord" name="user_passWord" required>
+            </div>
+            <div>
+                <label for="date">Votre date de naissance :</label>
+                <input type="date" id="date" name="user_birthDate" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="color">Choisissez une couleur :</label>
+                <input type="color" id="color" name="user_color">
+            </div>
+            <div>
+                <label for="option">Choisissez une option :</label>
+                <select name="selection" id="option">
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                    <option value="3">option 3</option>
+                    <option value="4">option 4</option>
+                    <option value="5">option 5</option>
+                    <option value="6">option 6</option>
+                    <option value="7">option 7</option>
+                    <option value="8">option 8</option>
+                    <option value="9">option 9</option>
+                    <option value="10">option 10</option>
+                </select>
+            </div>
+            <div>
+                <p>Choisissez une option :</p>
+                <input type="radio" name="choix1" checked>Option 1
+                <input type="radio" name="choix1">Option 2
+                <input type="radio" name="choix1">option 3
+            </div>
+            <div>
+                <p>Choisissez une ou plusieurs option(s) :</p>
+                <input type="checkbox" name="choix2" checked>Option 1
+                <input type="checkbox" name="choix2">Option 2
+                <input type="checkbox" name="choix2">option 3
+            </div>
+        </fieldset>
+
+        <input type="submit" name="submit" value="Envoyer">
+        <input type="reset" name="restart" value="Effacer">
+    </form>
+
+</body>
+</html>
